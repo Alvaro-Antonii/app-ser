@@ -89,10 +89,97 @@ li{
     border-radius: 13px;
 }
 .rec{
-    font-size: clamp(0.9rem, 1vw, 2rem);
+    font-size: clamp(1.5rem, 1vw, 2rem);
     color: antiquewhite;
 }
 .card-title-hor{
     color: antiquewhite;
     
 }
+
+.peli-rec-ti{
+    background-color: antiquewhite;
+    color: #0b0f07;
+    font-size:  clamp(0.6rem, 1vw, 2rem);;
+}
+
+
+
+/*Efecto reversible*/
+
+
+.face{
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .9s;
+}
+
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(36, 36, 72);
+    font-size:10px;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*-------------------------------------------------------*/
+
+@media (min-width: 400px){
+ 
+    .rec{
+        font-size: clamp(0.6rem, 1vw, 2rem);
+        color: antiquewhite;
+    }
+
+    .peli-rec-ti{
+       
+        font-size:  clamp(0.3rem, 1vw, 2rem);
+    }
+
+
+    .titulo-back{
+        font-size:  clamp(0.6rem, 1vw, 2rem);
+    }
+    .descrip{
+        font-size:  clamp(0.6rem, 1vw, 2rem);
+    }
+    .fecha-estreno{
+        font-size:  clamp(0.6rem, 1vw, 2rem);
+    }
+ }
+
+ @media (min-width: 1200px){
+ 
+    .rec{
+        font-size: clamp(1.5rem, 1vw, 2rem);
+        color: antiquewhite;
+    }
+  
+
+    .titulo-back{
+        font-size:  clamp(0.2rem, 1vw, 2rem);
+    }
+    .descrip{
+        font-size:  clamp(0.1rem, 1vw, 1rem);
+    }
+    .fecha-estreno{
+        font-size:  clamp(0.2rem, 1vw, 2rem);
+    }
+
+ }

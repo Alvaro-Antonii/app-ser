@@ -46,8 +46,12 @@ const options = {
       
         template.querySelector("img").setAttribute("src","https://image.tmdb.org/t/p/w500"+element.backdrop_path);
         template.querySelector("h5").textContent = element.title;
-        // template.querySelector("span").textContent = element.release_date;
         template.querySelector(".rank").textContent = element.vote_average;
+
+        template.querySelector(".titulo-back").textContent = element.title;
+        template.querySelector(".descrip").textContent = element.overview;        ;
+        template.querySelector(".fecha-estreno").textContent = element.release_date;
+        
         const clone = template.cloneNode(true);
         fragment.appendChild(clone);
       
