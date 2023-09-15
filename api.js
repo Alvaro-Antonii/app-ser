@@ -205,7 +205,7 @@ const peliReco = data =>{
 
   //Para cada elemento
   data.forEach(element => {
-      if(element.vote_average>8){
+      if(element.vote_average>=7.5){
         template.querySelector("img").setAttribute("src","https://image.tmdb.org/t/p/w500"+element.backdrop_path);
         template.querySelector("h5").textContent = element.title;
     

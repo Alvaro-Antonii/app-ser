@@ -90,16 +90,8 @@
         
         <!---------------------------Contenedores------------------------------------->
         <!-------------------------------------------------------------------->
-        <div class="row text-center">
-           
-            <div class="col-9">
-                <!---Contenedor------>
-                <div class="row text-center mt-3" id="contenedor-peliculas">
-            
-                </div>
-
-            </div>
-            <div class="col-3" >
+        <div class="row text-center" style="justify-content: center;">
+            <div class="col-12" >
                 <div class="pre" >
                     <h3 class="rec">Recomendadas</h2>
                     <div class="row text-center mt-3" id="contenedor-peliculas-prefe" >
@@ -115,17 +107,33 @@
             </div>
         </div>
         
+        
+        <div class="row text-center">
+           
+            <div class="col-12">
+                <!---Contenedor------>
+                <div class="row text-center mt-3" id="contenedor-peliculas">
+            
+                </div>
+
+            </div>
+            
+        </div>
+       
+
+        
+        
 
 
     </div>
     
-
+    
 
 
 
    <!----Tarjetas------>
     <template id="template-peli">
-        <div class="col-12 col-md-3   col-sm-6 mb-3" >
+        <div class="col-6 col-md-3   col-sm-6 mb-3" >
             <div class="card"  style="width: 100%;border-radius: 5px;box-shadow: 5px 5px 5px rgb(236, 156, 156);height: 250px;">
                 <div class="face front">
                     <img src="..." class="card-img-top" alt="..." style="width: 100%;height: 60%;">
@@ -155,8 +163,8 @@
     <!---Horizontal----->
 
     <template id="template-peli-recom">
-        <div class="col-md-12 col-sm-6 mb-3" >
-            <div class="card" >
+        <div class="col-6 col-md-3   col-sm-6 mb-3" >
+            <div class="card m-3" >
                 <img class="card-img-top" src="" alt="Card image">
                 <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
                   <h5 class="peli-rec-ti">John Doe</h5>
