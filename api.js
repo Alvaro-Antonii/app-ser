@@ -173,6 +173,9 @@ const boton = () =>{
           template.querySelector("h5").textContent = element.title;
           // template.querySelector("span").textContent = element.release_date;
           template.querySelector(".rank").textContent = element.vote_average;
+          template.querySelector(".titulo-back").textContent = element.title;
+          template.querySelector(".descrip").textContent = element.overview;        ;
+          template.querySelector(".fecha-estreno").textContent = element.release_date;
           const clone = template.cloneNode(true);
           fragment.appendChild(clone);
         } 
@@ -241,6 +244,9 @@ const mostrarIidoma = data =>{
         template.querySelector("h5").textContent = element.title;
         // template.querySelector("span").textContent = element.release_date;
         template.querySelector(".rank").textContent = element.vote_average;
+        template.querySelector(".titulo-back").textContent = element.title;
+        template.querySelector(".descrip").textContent = element.overview;        ;
+        template.querySelector(".fecha-estreno").textContent = element.release_date;
         const clone = template.cloneNode(true);
         fragment.appendChild(clone);
       }
