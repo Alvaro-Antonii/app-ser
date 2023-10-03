@@ -39,6 +39,21 @@ footer{
     object-fit: cover;
     height: 150px;  
 }
+.c{
+    width: 100%;
+    /* height: calc(100% - 10px); */
+    object-fit: cover;
+    height: 250px;   
+}
+#contenedor-peliculas{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(200px,1fr)
+    );
+    gap: 32px;
+}
 .card{
     background-color: rgb(238, 235, 233);
 }
